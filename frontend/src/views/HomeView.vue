@@ -156,7 +156,6 @@ export default {
     /**
      * sıralama işlemi
      * @param param
-     * TODO: sıralama işlemi yapılacak
      */
     sorting(param) {
       // table column sorting
@@ -178,6 +177,8 @@ export default {
         this.sort.name = "asc";
         this.sort.param = param;
       }
+      // sıralama işlemi sonrası tabloda gösterilecek verileri güncelle
+      this.tableSlice();
     },
 
     /**
